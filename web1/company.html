@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/download.png">
+    <link rel="apple-touch-icon" href="./img/download.png">
+    <!-- 검색(메타) 정보 -->
+    <meta name="og:url" content="https://www.hyundaicard.com/index.jsp">
+    <meta name="og:title" content="현대카드">
+    <meta name="description" content="현대카드 정보">
+    <meta name="keywords" content="현대카드, 신용카드, 체크카드">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="https://www.hyundaicard.com/index.jsp">
+    <meta property="og:title" content="현대카드">
+    <meta property="description" content="현대카드 정보">
+    <meta property="og:image" content="./img/download.png">
+    <!-- 웹 아이콘 연결 -->
+    <!-- xelicon-->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <title>현대카드</title>
+    <style>
+        #page2 .tit_box { text-align:right; }    
+    .sec_tit { font-size: 42px;    font-weight: 700;    line-height: 1.64;
+    letter-spacing: -0.03em; padding-top: 2em; padding-bottom: 1em; }
+    .tb1 { display:table; width: 100%; border-collapse: collapse; margin-bottom: 28px; }
+    .tb1 tr { display:table-row; }
+    .tb1 td, .tb1 th { display:table-cell; border-bottom:1px solid #666; 
+    line-height: 3.6; }
+    .tb1 tr:first-child th, .tb1 tr:first-child td { border-top:1px solid #666; }
+    .tb1 th { background-color: #f6f5f4; width: 200px; font-weight:600; color:#222; }
+    .tb1 td { color:#666; font-weight: 400; padding-left: 2em; }
+    .para1 { padding-top: 2em; padding-bottom: 1em;  line-height: 2; font-size:18px; }
+    .para2 { padding-top: 2em; padding-bottom: 1em;  line-height: 2; font-size:18px; 
+    font-weight: 700; }
+    
+    .col_grid_lst { clear:both; }
+    .col_grid_lst li { float: left; margin-right:53px; margin-bottom:53px; }
+    .col_grid_lst li:nth-child(4n) { margin-right: 0; }
+    .col_grid_box, .col_grid_cate_box { width: 280px; height: 140px; 
+    background-repeat: no-repeat; background-position:center center; border: 1px solid black; 
+    box-sizing: border-box; }
+    .col_grid_box { font-size: 15px; text-align: center; padding-top:2.4em; }
+    .col_grid_cate_box {  text-align: center; }
+
+    .year_lst { clear:both; width: 1200px; }
+    .year_lst li { width: 600px; float:left; padding:3.6em; min-height:520px;
+    box-sizing: border-box; overflow-x:hidden; }
+    .year_lst li:nth-child(2n+1) { clear:both; }
+    .year_lst li img { display:block;  }
+    .year_lst li:nth-child(4n) img { float:right; }
+    .month_para { padding-top: 0.8em; padding-bottom:0.8em; font-size:16px; 
+    padding-left:3em; text-indent:-2em; }
+    .month_para::first-letter { font-weight:700; }
+
+    .sec_img { clear:both; display:block; width: 1280px; margin:14px auto; }
+    .thumb_lst { clear:both; width: 1200px; overflow:hidden; margin-top: 50px; }
+    .thumb_lst li { float:left; padding-top:3em; width: 560px; margin-right: 80px;
+    padding-bottom: 2.4em; min-height:150px; background-repeat: no-repeat;
+    background-position: right center; box-sizing:border-box; border-top:1px solid #999; }
+    .thumb_lst li.item1 { background-image: url("./img/f01-loc-01.jpg"); }
+    .thumb_lst li.item2 { background-image: url("./img/f01-loc-02.jpg"); }
+    .thumb_lst li.item3 { background-image: url("./img/f01-loc-03.jpg"); }
+    .thumb_lst li.item4 { background-image: url("./img/f01-loc-04.jpg"); }
+    .thumb_lst li.item5 { background-image: url("./img/f01-loc-07.jpg"); }
+    .thumb_lst li.item6 { background-image: url("./img/f01-loc-08.jpg"); }
+    .thumb_lst li.item7 { background-image: url("./img/f01-loc-09.jpg"); }
+    .thumb_lst li.item8 { background-image: url("./img/f01-loc-10.jpg"); }
+
+    .thumb_lst li:nth-child(2n) { margin-right: 0; }
+    .thumb_txt_box { float:left; max-width:70%; }
+    .thumb_tit { font-size:26px; color:#0f0f0f; line-height: 1; font-weight: 700; 
+    letter-spacing:-0.1em; padding-bottom: 0.5em; }
+    .thumb_com { font-size:16px; color:#666; font-weight: 300; padding-bottom: 2em; }
+    .thumb_tel { font-size:20px; color:#666; font-weight: 300; }
+
+    .tb2 { display:table; width: 100%; border-collapse: collapse; margin-bottom: 28px; }
+    .tb2 tr { display:table-row; }
+    .tb2 td, .tb2 th { display:table-cell; border-bottom:1px solid #666; 
+    line-height: 3.6; }
+    .tb2 tr th { border-top:1px solid #666; }
+    .tb2 th { background-color: #f6f5f4; font-weight:600; color:#222; }
+    .tb2 td { color:#666; font-weight: 400; padding-left: 2em; }
+    .tb2 th:first-child, .tb2 tr td:first-child { width:70px; text-align:center;}
+    .tb2 th:last-child, .tb2 tr td:last-child { width:110px; text-align: center; 
+    padding-left: 0; }
+    .page_nation { clear:both; text-align: center; padding-top:0.5em; padding-bottom:4em; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <h1></h1>
+            <div class="hd_wrap">
+                <a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>회사</span>
+                            <ul class="sub">
+                                <li><a href="company.html#page1">기업개요</a></li>
+                                <li><a href="company.html#page2">기업정보</a></li>
+                                <li><a href="company.html#page3">연혁</a></li>
+                                <li><a href="company.html#page4">이용한도 조회ㆍ목록</a></li>
+                                <li><a href="company.html#page5">내 카드 비밀번호 설정ㆍ변경</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>카드</span>
+                            <ul class="sub">
+                                <li><a href="card.html#page1">카드 신청</a></li>
+                                <li><a href="card.html#page2">바로발급서비스</a></li>
+                                <li><a href="card.html#page3">카드 발급조회</a></li>
+                                <li><a href="card.html#page4">카드수령등록</a></li>
+                                <li><a href="card.html#page5">가족카드</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>이벤트</span>
+                            <ul class="sub">
+                                <li><a href="event.html#page1">포인트</a></li>
+                                <li><a href="event.html#page2">받은 혜택</a></li>
+                                <li><a href="event.html#page3">이벤트</a></li>
+                                <li><a href="event.html#page4">해외 이용 혜택</a></li>
+                                <li><a href="event.html#page5">상생소비지원금</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>금융</span>
+                            <ul class="sub">
+                                <li><a href="bd.html#page1">장기카드대출</a></li>
+                                <li><a href="bd.html#page2">단기카드대출</a></li>
+                                <li><a href="bd.html#page3">일부결제금액이월약정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Community</span>
+                            <ul class="sub">
+                                <li><a href="qna.html#page1">홈페이지 상담</a></li>
+                                <li><a href="qna.html#page2">카드 분실ㆍ도난신고/해제</a></li>
+                                <li><a href="qna.html#page3">FAQ</a></li>
+                                <li><a href="qna.html#page4">간편번호 등록</a></li>
+                                <li><a href="qna.html#page5">카드 종합 이용 안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">로그인</a>
+                    <a href="">사이트맵</a>
+                    <a href="">오시는길</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="./img/hills-gea2fd548e_1920.jpg" alt="기업개요">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">기업 개요</h2>
+                            <p class="sub_com">현대카드 (Hyundai Card)는 현대자동차가 미국 다이너스카드와 기술제휴로 설립한 카드회사입니다. <br>
+                                2003년 토탈 아이덴티티와 경영권 지분을 인수으며, 국내최고의 카드사 도약을 위하여 다양한 고객서비스로 지속성장을 하고 있습니다.</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">기업정보</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="company.html#page1" selected>기업개요</option>
+                                        <option value="company.html#page2">CEO 인사말</option>
+                                        <option value="company.html#page3">연혁</option>
+                                        <option value="company.html#page4">사업장 정보</option>
+                                        <option value="company.html#page5">전자공고</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h2 class="sec_tit">기업 정보</h2>
+                            <table class="tb1">
+                                <tbody>
+                                    <tr>
+                                        <th>산업</th>
+                                        <td>은행ㆍ금융</td>
+                                        <th>대표이사</th>
+                                        <td>정태영, 김데이비드덕환</td>
+                                    </tr>
+                                    <tr>
+                                        <th>설립일</th>
+                                        <td>1984.10.02</td>
+                                        <th>주요산업</th>
+                                        <td>현대카드 금융TMI콜센터</td>
+                                    </tr>
+                                    <tr>
+                                        <th>본사소재</th>
+                                        <td>서울 영등포구 의사당대로 3 (여의도동, 현대캐피탈빌딩) 현대카드</td>
+                                        <th>매출액</th>
+                                        <td>2조 6천억</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>    
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="./img/company2_1.jpg" alt="CEO 인사말">
+                        <div class="tit_box">
+                            <h2 class="sub_tit"></h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">기업정보</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="company.html#page1">기업개요</option>
+                                        <option value="company.html#page2" selected>CEO 인사말</option>
+                                        <option value="company.html#page3">연혁</option>
+                                        <option value="company.html#page4">사업장 정보</option>
+                                        <option value="company.html#page5">전자공고</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <figure class="sub_ban">
+                        <img src="./img/background-g425c70177_1280.png" alt="연혁">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">연혁</h2>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">기업정보</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel3" class="sel">
+                                        <option value="company.html#page1">기업개요</option>
+                                        <option value="company.html#page2">CEO 인사말</option>
+                                        <option value="company.html#page3" selected>연혁</option>
+                                        <option value="company.html#page4">사업장 정보</option>
+                                        <option value="company.html#page5">전자공고</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <ul class="year_lst">
+                                <li><p>현대카드(대표 정태영)의 `현대카드M\`은 지난 2003년 5월 기존 현대M카드를 업그레이드 한 브랜드 차별화 전략을 앞세워 시장에서 돌풍을 일으켰다. <br> M카드는 철저한 개별 브랜드를 적용해 고객에게 `뭔가 새롭고 특별한 카드\`라는 이미지를 심어 줬다. </p></li>
+                                <li></li>
+                            </ul>   
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page4">
+                    <figure class="sub_ban">
+                        <div>
+                            <h2>정기결제</h2>
+                            <p class="sub_com"></p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">기업정보</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel4" class="sel">
+                                        <option value="company.html#page1">기업개요</option>
+                                        <option value="company.html#page2">CEO 인사말</option>
+                                        <option value="company.html#page3">연혁</option>
+                                        <option value="company.html#page4" selected>사업장 정보</option>
+                                        <option value="company.html#page5">전자공고</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_wrap">
+                        <h2 class="sec_tit"></h2>
+                        <ul class="col_grid_lst">
+                            <li class="col_grid_cate">
+                                <div class="col_grid_box">
+                                    <i class="xi-money"></i>
+                                    <h3 class="col_grid_tit">월세<br>(아파트ㆍ오피스텔ㆍ상가 등)</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col_grid_box item1">
+                                    <h3 class="col_grid_tit">초·중·고교 학교납입금 <br>(스쿨뱅킹)</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col_grid_box item2">
+                                    <h3 class="col_grid_tit">KT휴대폰요금</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col_grid_box item3">
+                                    <h3 class="col_grid_tit">KT전화요금</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col_grid_box">
+                                    <h3 class="col_grid_tit">아파트관리비</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col_grid_box item4">
+                                    <h3 class="col_grid_tit">도시가스요금</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col_grid_box item5">
+                                    <h3 class="col_grid_tit">전기요금</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col_grid_box item6">
+                                    <h3 class="col_grid_tit">4대보험료</h3>
+                                </div>
+                            </li>
+                            <li class="col_grid_cate">
+                                <div class="col_grid_box">
+                                    <h3 class="col_grid_tit">LH/SH임대료</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col_grid_box item7">
+                                    <h3 class="col_grid_tit">코스트코멤버쉽 연회비</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="page" id="page5">
+                    <figure class="sub_ban">
+                        <img src="./img/company5.jpg" alt="전자공고">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">전자공고</h2>
+                            <p class="sub_com">고객과의 신뢰와 기업의 가치를 높이기 위한 첫걸음으로 정확한 전자공고를 제공합니다.</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">기업정보</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel5" class="sel">
+                                        <option value="company.html#page1">기업개요</option>
+                                        <option value="company.html#page2">CEO 인사말</option>
+                                        <option value="company.html#page3">연혁</option>
+                                        <option value="company.html#page4">사업장 정보</option>
+                                        <option value="company.html#page5" selected>전자공고</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <h2 class="sec_tit">결산 공고</h2>
+                            <table class="tb2">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>제목</th>
+                                        <th>날짜</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="">제10기 결산공고</a></td>
+                                        <td>2022.03.11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="">제9기 결산공고</a></td>
+                                        <td>2021.03.16</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p class="page_nation"><a href="">1</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>
+        <footer id="ft" class="sub_footer">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">개인</a>
+                    <a href="">개인사업자</a>
+                    <a href="">법인</a>
+                    <a href="">가맹점</a>
+                </nav>
+            </div>
+            <nav class="snb">
+                <ul>
+                    <li class="sns1">
+                        <a href="" title="유튜브"><i class="xi-youtube-play"></i></a>
+                    </li>
+                    <li class="sns2">
+                        <a href="" title="페이스북"><i class="xi-facebook"></i></a>
+                    </li>
+                    <li class="sns3">
+                        <a href="" title="네이버"><i class="xi-naver"></i></a></li>
+                </ul>
+            </nav>
+            <p class="copyright">서울시 영등포구 의사당대로 3 현대캐피탈빌딩 사업자 등록번호 213-86-15419 © HYUNDAI CARD Corp.</p>
+        </footer>
+    </div>
+</body>
+</html>

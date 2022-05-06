@@ -1,0 +1,59 @@
+    @charset "utf-8";
+    * { margin: 0; padding: 0;}
+    body, html { font-family: 'Akshar', sans-serif; width: 100%; }
+    ul { list-style: none;}
+    a {text-decoration: none; color: #000;}
+    i[class*='xi'] { font-size: 40px;}
+    i[class*'xi']:hover {color: red;}
+
+    .wrap { clear: both; width: 100%;}
+    #hd {clear: both; height: 100px; width: 100%; position:fixed; top: 0; left: 0; z-index: 999;
+    background-color: rgba(255, 255, 255, 0.6)}
+    .hd_wrap { clear: both; width: 1800px; margin: 0 auto;}
+    .logo {display: block; width: 100%;}
+    .logo img { display: block; width: 120px; float: left; padding-top: 35px;} 
+    #gnb {float: left;}
+    #tnb {float: right;}
+    #gnb > ul > li { float: left; padding-left: 50px; padding-right: 10px; position: relative; padding-top: 25px; padding-bottom: 25px}
+    #gnb > ul > li > span { display: block; line-height: 50px; cursor: pointer; width: 100%;}
+    #gnb ul li .sub { display: none; position: absolute; left: 0px; top: 100px; z-index: 999;
+     padding-left: 10px; width: 250px; height: 200px; background-color: #eee;}
+    /* .sub를 안보이게 하기 */
+    #gnb ul li .sub li:hover a {color: gray; }
+    #gnb ul li .sub li { line-height: 38px;}
+    #gnb ul li:hover .sub { display: block;}
+    /* li에 마우스 포인터를 댈 경우 .sub이 보이게 하기 */
+
+    #tnb { float: right; padding-top: 10px; padding-bottom: 14px; margin-top: 20px;}
+    #tnb a {font-size: 0.85em; padding-left: 30px;}
+    #tnb a:hover {color: #000; text-decoration: underline;}
+    
+    #content {clear: both; width: 100%; padding-top: 100px;}
+    #vs {padding-left: 150px; width: 1600px; overflow: hidden;}
+    .img_box {width: 200%;}
+    .img_box li {float: left; width: 50%; position: relative;}
+    .img_box li a {display: block;}
+    .img_box li a img{display: block; width: 100%; height: auto;}
+    .img_box .tit_box {position: absolute; top: 50px;left: 50px;color: #fff;
+    text-shadow: 1px 1px 1px #333; padding-left: 40px;}
+    .vs_tit { font-size:42px; line-height:1.6; }
+    .vs_com { font-size:16px; padding-top: 40px; }
+    .btn_group { position:absolute; bottom:450px; left:90px; z-index:40; }
+    .btn_group button { display:block; width: 80px; height: 80px; float:left; 
+    background-color:rgba(0,0,0,0); border:none; outline: none; color:#fff; }
+    .btn_group button i[class*='xi'] { color: #fff; }
+    .btn_group button:hover i[class*='xi'] { cursor:pointer; color:gold; }
+    .btn_group button.prev_btn { padding-left: 80px; left: 100px;}
+    .btn_group button.next_btn { padding-left: 1510px;}
+
+    .grid_box {clear: both; width: 100%; padding-top: 100px;}
+    .grid_box li.space {clear: both; width: 20%; font-size: 30px; padding-top: 100px; text-align: left;}
+    .grid_box li {float:left; width: 10vw; height: 20vw; padding-left: 50px; padding-right: 50px; text-align: center; font-size: 24px;}
+    
+    #ft { clear: both; width: 100%; background-color: gray;}   
+    .ft_wrap { clear:both; width: 1280px; margin: 0 auto;}
+    .fnb {float: left;}
+    .fnb a{ display: block; float: left; margin: 14px; margin-left: 0; margin-right: 28px; font-size: 12px; font-weight: 900;}
+    .snb {float: right;}
+    .snb ul li {float: left; margin-left: 28px;}
+    .copyright { clear:both; padding-bottom: 14px; font-size:12px; font-weight: 900;}

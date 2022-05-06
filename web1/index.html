@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/download.png">
+    <link rel="apple-touch-icon" href="./img/download.png">
+    <!-- 검색(메타) 정보 -->
+    <meta name="og:url" content="https://www.hyundaicard.com/index.jsp">
+    <meta name="og:title" content="현대카드">
+    <meta name="description" content="현대카드 정보">
+    <meta name="keywords" content="현대카드, 신용카드, 체크카드">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="https://www.hyundaicard.com/index.jsp">
+    <meta property="og:title" content="현대카드">
+    <meta property="description" content="현대카드 정보">
+    <meta property="og:image" content="./img/download.png">
+    <!-- 웹 폰트/폰트 모듈 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- 웹 아이콘 연결 -->
+    <!-- xelicon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="common.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>현대카드</title>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <h1></h1>
+            <div class="hd_wrap">
+                <a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>회사</span>
+                            <ul class="sub">
+                                <li><a href="company.html#page1">기업개요</a></li>
+                                <li><a href="company.html#page2">기업정보</a></li>
+                                <li><a href="company.html#page3">연혁</a></li>
+                                <li><a href="company.html#page4">정기결제</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>카드</span>
+                            <ul class="sub">
+                                <li><a href="card.html#page1">3층 시스템</a></li>
+                                <li><a href="card.html#page2">2층 구독</a></li>
+                                <li><a href="card.html#page3">카드 발급조회</a></li>
+                                <li><a href="card.html#page4">카드수령등록</a></li>
+                                <li><a href="card.html#page5">가족카드</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>이벤트</span>
+                            <ul class="sub">
+                                <li><a href="event.html#page1">포인트</a></li>
+                                <li><a href="event.html#page2">받은 혜택</a></li>
+                                <li><a href="event.html#page3">이벤트</a></li>
+                                <li><a href="event.html#page4">해외 이용 혜택</a></li>
+                                <li><a href="event.html#page5">상생소비지원금</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>금융</span>
+                            <ul class="sub">
+                                <li><a href="bd.html#page1">장기카드대출</a></li>
+                                <li><a href="bd.html#page2">단기카드대출</a></li>
+                                <li><a href="bd.html#page3">일부결제금액이월약정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Community</span>
+                            <ul class="sub">
+                                <li><a href="qna.html#page1">홈페이지 상담</a></li>
+                                <li><a href="qna.html#page2">카드 분실ㆍ도난신고/해제</a></li>
+                                <li><a href="qna.html#page3">FAQ</a></li>
+                                <li><a href="qna.html#page4">간편번호 등록</a></li>
+                                <li><a href="qna.html#page5">카드 종합 이용 안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">로그인</a>
+                    <a href="">사이트맵</a>
+                    <a href="">오시는길</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div id="vs">
+                <ul class="img_box">
+                    <li>
+                        <a href="">
+                            <img src="img/pc_homebanner_b_mxblack.png" alt="">
+                            <div class="tit_box"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/home_banner_img_b_launching.png" alt="">
+                            <div class="tit_box"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn_group">
+                    <button class="prev_btn"><i class="xi-angle-left"></i></button>
+                    <button class="next_btn"><i class="xi-angle-right"></i></button>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        wd = $(window).width();
+                        var intv = setInterval(function(){
+                            ani1();
+                        }, 5000);
+                        function ani1(){
+                            $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
+                                $(".img_box li").eq(0).appendTo($(".img_box"));
+                                $(".img_box").css("margin-left","0px");
+                            });
+                        }
+                        function ani2(){
+                            $(".img_box").css("margin-left",-wd+"px");
+                            $(".img_box li:last-child").prependTo($(".img_box"));
+                            $(".img_box").not(":animated").animate({"margin-left":"0px"}, 600);
+                        }
+                        $(".btn_group .next_btn").click(function(){
+                            clearInterval(intv);
+                            ani1();
+                            intv = setInterval(function(){ ani1(); }, 5000);                    });
+                        $(".btn_group .prev_btn").click(function(){
+                            clearInterval(intv);
+                            ani2();
+                            intv = setInterval(function(){ ani1(); }, 5000);
+                        });
+                    });    
+                    </script>
+            </div>
+            <ul class="grid_box">
+                <li class="space">
+                    Hyundai Originals <br>
+                    현대카드의 오리지널리티를 담은 진정한 현대카드
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_TPE3_h.png" alt="">
+                    </a>
+                    the purple osee
+                </li>
+                <li>   
+                    <a href="">
+                        <img src="./img/card_TRE5_h.png" alt="">
+                    </a>
+                    the red Edition5
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_TGE2_h.png" alt="">
+                    </a>
+                    the green Edition2
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_TPI_h.png" alt="">
+                    </a>
+                    the pink
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_MBT_h.png" alt="">
+                    </a>
+                    M BOOST
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_XE3_h.png" alt="">
+                    </a>
+                    X BOOST
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_ZF_h.png" alt="">
+                    </a>
+                    Z family
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_ZROE2_h.png" alt="">
+                    </a>
+                    ZERO Edition2 <br>
+                    (할인형)
+                </li>
+            </ul>
+            <ul class="grid_box">
+                <li class="space">
+                    Champions Brands <br>
+                    최고의 브랜드와 콜라보한 또 하나의 현대카드
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_AMFM_h.png" alt="">
+                    </a>
+                    American Express
+                </li>
+                <li>   
+                    <a href="">
+                        <img src="./img/card_ESPE2_h.png" alt="">
+                    </a>
+                    SmileCard Edition2
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_GCE2_h.png" alt="">
+                    </a>
+                    GS칼텍스 현대카드
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_HMLSB_h.png" alt="">
+                    </a>
+                    HyundaiMobility카드 <br>
+                    (상용차 화물차유가보조금카드)
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_KALT3_h.png" alt="">
+                    </a>
+                    대한항공카드 150
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_SBHC_h.png" alt="">
+                    </a>
+                    스타벅스 현대카드
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_MSSHC_h.png" alt="">
+                    </a>
+                    무신사 현대카드
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img/card_NVHC_h.png" alt="">
+                    </a>
+                    네이버 현대카드
+                </li>
+            </ul>
+        </div>
+        <footer id="ft" class="sub_footer">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">개인</a>
+                    <a href="">개인사업자</a>
+                    <a href="">법인</a>
+                    <a href="">가맹점</a>
+                </nav>
+            </div>
+            <nav class="snb">
+                <ul>
+                    <li class="sns1">
+                        <a href="" title="유튜브"><i class="xi-youtube-play"></i></a>
+                    </li>
+                    <li class="sns2">
+                        <a href="" title="페이스북"><i class="xi-facebook"></i></a>
+                    </li>
+                    <li class="sns3">
+                        <a href="" title="네이버"><i class="xi-naver"></i></a></li>
+                </ul>
+            </nav>
+            <p class="copyright">서울시 영등포구 의사당대로 3 현대캐피탈빌딩 사업자 등록번호 213-86-15419 © HYUNDAI CARD Corp.</p>
+        </footer>
+    </div>
+</body>
+</html>
