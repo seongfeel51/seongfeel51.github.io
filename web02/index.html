@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost:8082/web02/index.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>메인 페이지</title>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+<style>
+* { margin: 0; padding: 0; }
+body, html { width:100%; font-family: 'Noto Sans KR', sans-serif; }
+ul { list-style: none; }
+a { text-decoration: none; }
+input, button { outline:0; border:0; }
+table, .table { display:table; border-collapse: collapse; }
+tr, .tr { display:table-row; }
+td, th, .td, .th { display:table-cell; }
+.clrfx:after { content:""; display:block; width:100%; clear:both; } /* 클리어 픽스 처리 */
+.container { clear:both; width: 100%; }
+
+#hd { clear:both; width: 100%; height: 100px; background-color: transparent; }
+#hd:hover { background-color: #fff; }
+.top_hd_wrap { width: 100%; height: 48px; background-color: rgb(150, 150, 150); color:#fff; 
+	font-family: 'Nanum Gothic Coding', sans-serif; font-size:14px; line-height: 36px; }
+.hd_wrap { clear:both; width:1280px; margin: 0 auto; }
+#tnb .ltnb { float:left; }
+#tnb .rtnb { float:right; }
+#tnb ul li { float:left; }
+#tnb .rtnb li { padding-left: 5px; }
+#tnb ul li a { color:#fff; font-size:14px; display:block; line-height: 48px; 
+position:relative; padding-left: 10px; padding-right: 10px;}
+.gs{ border-left: 1px solid #fff;}
+.gs.photo{ border-right: 1px solid #fff;}
+.xi-home-o{ padding-top: 9px;}
+
+#gnb { float:right; }
+#gnb li { float:left; height: }
+#gnb li a { display:block; }
+#gnb li .menu1 { color:#fff; line-height:58px; font-size:16px;
+	 font-weight: bold; padding-left:40px; padding-right:40px; }
+#gnb li:hover .menu1 { background-color: rgba(0,0,0,0.45);}
+#hd:hover #gnb li .menu1 { color:deepskyblue; }
+#gnb li .sub { display:none; position:absolute; top:94px; left: 0; 
+width:100vw; overflow-x:hidden; min-height:300px; background-color: rgba(17, 82, 152, 0.85); }
+#gnb li .sub:before { content:""; display:block; width:330px; height:auto; 
+margin-left:8vw; margin-right: 8vw; float:left; background-repeat: no-repeat;
+background-position: 0 0; }
+#gnb li.item1 .sub:before { height:405px; background-image: url("./img/gnbB1_bg3.jpg");}
+#gnb li.item2 .sub:before { height:529px; background-image: url("./img/gnbB2_bg4.jpg");}
+#gnb li.item3 .sub:before { height:550px; background-image: url("./img/gnbB3_bg4.jpg");}
+#gnb li.item4 .sub:before { height:626px; background-image: url("./img/gnbB4_bg5.jpg");}
+#gnb li.item5 .sub:before { height:364px; background-image: url("./img/gnbB5_bg3.jpg");}
+#gnb li.item6 .sub:before { height:290px; background-image: url("./img/gnbB6_bg3.jpg");}
+#gnb li:hover .sub { display:block; }
+#gnb li .sub li { float:left; width:120px; height:40px;  margin-top:40px; 
+margin-right: 40px; }
+#gnb li .sub li a { color:#fff; font-size:14px; font-weight: 600; 
+display:block; line-height: 40px; min-width:30px; 
+text-align:center; border:1px solid #fff; padding-left: 10px; padding-right: 10px; 
+background-color:transparent; }
+#gnb li .sub li:hover a { background-color:rgba(0,0,0,0.5); }
+</style>
+</head>
+<body>
+	<div class="container clrfx">
+		<header id="hd" class="clrfx">
+			<div class="top_hd_wrap clrfx">
+				<nav id="tnb" class="hd_wrap">
+					<ul class="ltnb">
+						<li><a href="" class="gs ">군산시청</a></li>
+						<li><a href="" class="gs">어린이시청</a></li>
+						<li><a href="" class="gs">군산시간여행축제</a></li>
+						<li><a href="" class="gs">스탬프투어</a></li>
+						<li><a href="" class="gs photo">포토투어</a></li>
+					</ul>
+					<ul class="rtnb">
+						<li><a href="" class=""><i class="xi-home-o xi-2x"></i></a></li>
+						<li><a href="" class="ico traffic">교통정보</a></li>
+						<li><a href="login.html" class="ico login">로그인</a></li>
+						<li><a href="agreement.html">회원가입</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="hd_wrap clrfx">
+				<a href="index.html" class="logo">로고타입</a>
+				<nav id="gnb">
+					<ul>
+						<li><a href="" class="menu1">관광명소</a>
+							<ul class="sub">
+								<li class="cate"><a href="PlaceCtrl.html?ptype=A&amp;prop=11">섬</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=A&amp;prop=12">해변</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=A&amp;prop=13">산</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=A&amp;prop=14">사찰</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=A&amp;prop=15">박물관 및 박람회</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=A&amp;prop=16">교량 및 시설</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=A&amp;prop=17">문화재 및 유적</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=A&amp;prop=18">유명길 또는 전망대</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=A&amp;prop=19">기타</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="menu1">문화축제</a>
+							<ul class="sub">
+								<li class="cate"><a href="PlaceCtrl.html?ptype=B&amp;prop=11">문화예술행사</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=B&amp;prop=12">축제</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=B&amp;prop=13">체험행사</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=B&amp;prop=14">일출제</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=B&amp;prop=15">음식문화제</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=B&amp;prop=16">지역별축제</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=B&amp;prop=17">기타문화축제</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="menu1">숙박/음식/쇼핑</a>
+							<ul class="sub">
+								<li class="cate"><a href="PlaceCtrl.html?ptype=C&amp;prop=11">호텔</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=C&amp;prop=12">모텔</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=C&amp;prop=13">콘도</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=C&amp;prop=14">펜션</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=C&amp;prop=15">민박</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=C&amp;prop=16">게스트하우스</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=C&amp;prop=17">캠핑숙소</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=C&amp;prop=18">찜질방</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=C&amp;prop=19">기타숙소</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=D&amp;prop=11">한식</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=D&amp;prop=12">횟집</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=D&amp;prop=13">중식</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=D&amp;prop=14">양식</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=D&amp;prop=15">일식</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=D&amp;prop=16">분식</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=D&amp;prop=17">뷔페</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=D&amp;prop=18">동남아식</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=D&amp;prop=19">기타식당</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=E&amp;prop=11">전통시장</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=E&amp;prop=12">수산시장</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=E&amp;prop=13">특산물시장</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=E&amp;prop=14">공예/공방</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=E&amp;prop=15">주문제작</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=E&amp;prop=16">5일장</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=E&amp;prop=17">직거래소</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=E&amp;prop=18">라이브쇼핑</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=E&amp;prop=19">기타쇼핑</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="menu1">체험관광</a>
+							<ul class="sub">
+								<li class="cate"><a href="PlaceCtrl.html?ptype=F&amp;prop=11">관람시설</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=F&amp;prop=12">체험시설</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=F&amp;prop=13">레저시설</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=F&amp;prop=14">캠핑시설</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=F&amp;prop=15">농어촌체험</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=F&amp;prop=16">이색체험</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=F&amp;prop=17">템플스테이</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=F&amp;prop=18">요트투어</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=F&amp;prop=19">VR체험</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="menu1">교통</a>
+							<ul class="sub">
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=11">투어버스</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=12">시외버스</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=13">시내버스</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=14">마을버스</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=15">택시</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=16">관광전세버스</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=17">렌트카</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=18">바이크</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=19">전용관람차</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=21">호남고속철도</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=22">목포선철도</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=23">남해선철도</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=24">신설KTX</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=31">여객선</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=32">유람선</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=33">크루즈</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=34">낚시배대여</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=35">무인도방문 및 계약선박</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=41">김포공항</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=42">제주공항</a></li>
+								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=43">양양공항</a></li>								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=44">청주공항</a></li>								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=45">해외공항</a></li>								<li class="cate"><a href="PlaceCtrl.html?ptype=G&amp;prop=46">기타국내공항</a></li>					
+							</ul>
+						</li>	
+		
+						<li><a href="" class="menu1">커뮤니티</a>
+							<ul class="sub">
+								<li class="cate"><a href="GetUserImpressionListCtrl.html">이용후기</a></li>
+								<li class="cate"><a href="GetUserDataListCtrl.html">자료실</a></li>
+								<li class="cate"><a href="GetUserNoticeListCtrl.html">공지사항</a></li>
+							</ul>
+						</li><li>
+					</li></ul>	
+				</nav>
+			</div>
+		</header>
+		<div id="content">
+			
+		</div>
+		<footer id="ft">
+			<div class="ft_wrap">
+				푸터
+			</div>
+		</footer>
+	</div>
+
+</body></html>
