@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        .sub_img{ margin: 0 auto; width: 1100px; padding-top: 70px;}
+        .sub_img img{ width: 60vw;}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- 로고&로그인 -->
+        <div class="hd_top_wrap">
+            <div class="hd_top_area">
+                <a href="index.html" class="hd_logo">
+                    <img src="./img/logo.png" alt="로고">
+                </a>
+                <div class="hd_top_r">
+                    <div class="hd_lang">
+                        <a href="">ENG</a>
+                    </div>
+                    <div class="hd_login">
+                        <span>
+                            <img src="./img/icon_login.png" alt="콘">
+                        </span>
+                        <span>
+                            <a href="login.html">로그인</a>
+                        </span>
+                        <span>
+                            <a href="agree.html">회원가입</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- gnb -->
+        <div class="hd_bt_wrap">
+            <nav id="hd_gnb">
+                <ul>
+                    <li>
+                        <a href="intro.html">병원소개</a>
+                        <ul class="hd_subpage">
+                            <li><a href="intro_sub01.html">병원 이야기</a></li>
+                            <li><a href="intro_sub02.html">의료진 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="info.html">진료안내</a>
+                        <ul class="hd_subpage">
+                            <li><a href="info_sub01.html">진료안내</a></li>
+                            <li><a href="info_sub02.html">입퇴원안내</a></li>
+                            <li><a href="info_sub03.html">서류발급안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="medi1.html">치료</a>
+                        <ul class="hd_subpage">
+                            <li><a href="medi1_sub01.html">서브1</a></li>
+                            <li><a href="medi1_sub02.html">서브2</a></li>
+                            <li><a href="medi1_sub03.html">서브3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="medi2.html">주사</a>
+                        <ul class="hd_subpage">
+                            <li><a href="medi2_sub01.html">서브1</a></li>
+                            <li><a href="medi2_sub02.html">서브2</a></li>
+                            <li><a href="medi2_sub03.html">서브3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="commu.html">커뮤니티</a>
+                        <ul class="hd_subpage">
+                            <li><a href="commun_sub01.html">공지사항</a></li>
+                            <li><a href="subpage.html">증명서발급안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 사이드바 -->
+        <div class="sidebar">
+            <a href=""><img src="./img/btn-calling.png" alt=""></a>
+            <a href=""><img src="./img/btn-chat-kakao.png" alt=""></a>
+            <button type="button" onclick="$('html, body').animate({scrollTop: 0}, 300);"><img src="./img/btn_top.png" alt="">TOP</button>
+        </div>
+    </header>
+    <div class="sub_img">
+        <img src="img/sub.jpg" alt="">
+    </div>
+    <footer class="footer">
+        <div class="ft_sns">
+            <div class="ft_inner">
+                <h4>연세마디마취통증의학과의원</h4>
+                <p class="ft_sns_link">
+                    <a href="" class="ft_sns_link1"></a>
+                    <a href="" class="ft_sns_link2"></a>
+                    <a href="" class="ft_sns_link3"></a>
+                    <a href="" class="ft_sns_link4"></a>
+                </p>
+            </div>
+        </div>
+        <nav class="ft_link">
+            <div class="ft_inner">
+                <span><a href="">병원소개</a></span>
+                <span><a href="">진료내용</a></span>
+                <span><a href="">치료</a></span>
+                <span><a href="">주사</a></span>
+                <span><a href="">병원공지   </a></span>
+            </div>
+        </nav>
+        <div class="ft_info">
+            <div class="ft_inner">
+                <small class="ft_copy">© 2021 ysmadi</small>
+                <br>
+                <br>
+                <span>의료기관명칭 | 연세마디마취통증의학과의원</span>
+                <span>대표원장 | 이정석</span>
+                <span>사업자등록번호 | 242-99-01271</span>
+                <br>
+                <span>대표전화 | 031. 994. 4225</span>
+                <br>
+                <span>주소 | 경기도 고양시 일산동구 정발산로 23, 301호(장항동,호수빌딩) 연세마디마취통증의학과의원</span>
+                <br>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

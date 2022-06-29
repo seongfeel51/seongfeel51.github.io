@@ -1,0 +1,21 @@
+/* 푸터 */
+.ft_inner {width: 1400px; margin: auto;}
+/* sns */
+.ft_sns{width: 100%; padding: 18px 0; background: #327cb6}
+.ft_sns >div * {vertical-align: middle; color: #fff; display: inline-block;}
+.ft_sns a {width: 45px; height: 45px; margin: 0 10px; background-size: cover;}
+/* sns 링크 이미지 */
+.ft_sns_link1 {background-image: url(/img/icon_quick_youtube.png);}
+.ft_sns_link2 {background-image: url(/img/icon_quick_navber_blog.png);}
+.ft_sns_link3 {background-image: url(/img/icon_quick_facebook.png);}
+.ft_sns_link4 {background-image: url(/img/icon_quick_instar.png);}
+/* 이용약관 등 링크 */
+.ft_link {padding: 15px 0; border-bottom: 1px solid #ddd;}
+.ft_link span {border-left: 1px solid #ddd; margin-left: 10px; padding-left: 14px;}
+.ft_link span:first-child {border: 0; margin: 0; padding: 0;}
+.ft_link span a {font-size: 24;}
+/* 푸터 인포 */
+.ft_info .ft_inner {padding-top: 25px; padding-bottom: 50px; background-image: url(/img/img_logo.png); background-repeat: no-repeat; background-position: right center;}
+.ft_info .ft_inner h4 {margin-bottom: 10px; font-size: 18; font-weight: 600;}
+
+.ft_copy {display: block; margin-top: 15px;}

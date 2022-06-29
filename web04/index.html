@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- 메타포 문서정보 -->
+    <!-- 파비콘 -->
+    <!-- 오픈그래프 -->
+    <!-- 폰트 -->
+    <!-- API 필수 플러그인 -->
+    
+    <title>홈페이지</title>
+    <!-- 문서 초기화 스타일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    
+    <!-- 문서 로딩전 스크립트 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        html, body { width: 100%; height: 100%; }
+        .con_wrap { display: block; width: 100%; height: 100%; padding-top: 0%; }
+        *{ list-style: none; }
+        *{ margin:0 auto; height: auto; padding: 0; }
+        
+
+        /* 슬라이더 부분 */
+        .con_content { display: block; clear: both; width: 100%; }
+        .con_slide { display: block; width: 100%; height: 500px; overflow: hidden;}
+        .con_slide_box { width: 500%; } 
+        .con_slide_box li { float: left; width: 20%; position: relative;}
+        .con_test { display: block; width: 100%;  overflow: hidden; }
+        .con_slide_box li a img {  width: 100%; height: 500px; display:block; }
+
+        
+        /* 처음 오셨나요 부분 */
+        .con_info { display: block; background-color: #f6f6fa; height: 544px; }
+        .con_infosec { max-width: 1400px; height: 424px; padding: 60px 0; margin: 0 auto;}
+        .con_info_first { float: left; width: 68%; height: 422px; }
+        .con_visit { height: 330px; margin-right: 40px; padding: 40px 35% 50px 60px; border: 1px solid #1f75b0;
+            background: url(./img/floor1.jpg); background-position: center; }
+        .con_info_first ul li p { font-size: 22px; font-weight: 400; line-height: 1.4; }
+        .con_info_first ul li p strong { display:block; font-size: 44px; font-weight: 400; line-height: 1.0;
+            margin-bottom: -10px;    color: #1f75b0; font-weight: 500; letter-spacing: -2px; }
+        .con_link { position: relative; margin: 20px 0 0; }
+        .con_link span { float: left; width: 50%; }
+        .con_link a:not(.guide-btn) { display: block; margin: 5px; background: #1f75b0;
+            border: 1px solid #d3d3d3; color: #fff; font-size: 22px; font-weight: bold;
+            text-align: center; line-height: 82px; transition: all .3s; text-decoration: none;  }
+
+        /* 영업시간 부분 */
+        .con_info_sales { display: block; float: right; width: 32%; text-align: center; }
+        .con_sales { display: block; padding: 55px 50px 60px; background-color: #fff; border: 1px solid #ddd; }
+        .con_info_sales p { color: #1f75b0; font-size: 40px; font-weight: 500; line-height: 1; }
+        .con_info_sales .con_time { margin: 25px 0 0;  border-bottom: 1px solid #999; }
+        .con_info_sales .con_time li:first-child { border-top: 1px solid #999; }
+        .con_info_sales .con_time li { font-size: 18px; padding: 12px 0 13px; border-top: 1px solid #ddd; font-weight: 400; line-height: 1.4; }
+        .con_info_sales .con_time li .con_t { display: inline-block; }
+        .con_info_sales .con_time li .con_day { letter-spacing: 16px; color: #1f75b0; }
+        .con_info_sales .con_time li .con_lunch { letter-spacing: 2px; color: #1f75b0; margin-right: 10px; }
+        .con_info_sales .con_time li .con_sat { letter-spacing: 2px; color: #1f75b0; margin-right: 14px ; }
+         
+        /* 공지사항 부분 */
+        .con_commu { display: block; max-width: 1400px; padding: 60px 0; margin: 0 auto; height: 500px;}
+        .con_notice { float: left; width: 42.5%; }
+        .con_nobox { background: #f6f6fa; height: 428px; padding: 0 40px; border: 1px solid #ddd; }
+        .con_title { padding: 50px 0; font-size: 30px; text-align: center;  }
+        .con_list { border-bottom: 1px solid #999; }
+        .con_list li:first-child { border-top: 1px solid #999; }
+        .con_list li { border-top: 1px solid #e1e1e1; position: relative; padding: 15px  15px 25px; font-size: 16px; }
+        .con_date { position: absolute; top: 15px; right: 25px; color: #999;  }
+        
+        /* 치료사례 부분 */
+        .con_case { float: left; width: 25.5%; }
+        .con_cabox { display: block; height: 430px; margin-right: 40px; padding: 0 40px; background-image: url(/img/main2.jpg); 
+            text-align: center; color: #fff; }
+        .con_cabox .con_list li a { color: #fff; }
+
+        /* 자주찾는메뉴 부분 */
+        .con_menu { float: right; width: 32%;  }
+        .con_menubox { display: block; height: 428px; background: #fff; border: 1px solid #ddd;
+            text-align: center; padding: 0 40px; }
+        .con_menubox .con_title { border-bottom: 1px solid #999 }
+        .con_menulink { margin: 48px 0 0; }
+        .con_menulink li { margin-bottom: 20px; shadow}
+
+        /* 푸터 */
+        .ft_inner {width: 1400px; margin: auto;}
+        /* sns */
+        .ft_sns{width: 100%; padding: 18px 0; background: #327cb6}
+        .ft_sns >div * {vertical-align: middle; color: #fff; display: inline-block;}
+        .ft_sns a {width: 45px; height: 45px; margin: 0 10px; background-size: cover;}
+        /* sns 링크 이미지 */
+        .ft_sns_link1 {background-image: url(/img/icon_quick_youtube.png);}
+        .ft_sns_link2 {background-image: url(/img/icon_quick_navber_blog.png);}
+        .ft_sns_link3 {background-image: url(/img/icon_quick_facebook.png);}
+        .ft_sns_link4 {background-image: url(/img/icon_quick_instar.png);}
+        /* 이용약관 등 링크 */
+        .ft_link {padding: 15px 0; border-bottom: 1px solid #ddd;}
+        .ft_link span {border-left: 1px solid #ddd; margin-left: 10px; padding-left: 14px;}
+        .ft_link span:first-child {border: 0; margin: 0; padding: 0;}
+        .ft_link span a {font-size: 24;}
+        /* 푸터 인포 */
+        .ft_info .ft_inner {padding-top: 25px; padding-bottom: 50px; background-image: url(img/img_logo.png); background-repeat: no-repeat; background-position: right center;}
+        .ft_info .ft_inner h4 {margin-bottom: 10px; font-size: 18; font-weight: 600;}
+
+        .ft_copy {display: block; margin-top: 15px;}
+
+    </style>
+</head>
+
+
+<body>
+    <div class="con_wrap">
+        <header class="header">
+            <!-- 로고&로그인 -->
+            <div class="hd_top_wrap">
+                <div class="hd_top_area">
+                    <a href="index.html" class="hd_logo">
+                        <img src="./img/logo.png" alt="로고">
+                    </a>
+                    <div class="hd_top_r">
+                        <div class="hd_lang">
+                            <a href="">ENG</a>
+                        </div>
+                        <div class="hd_login">
+                            <span>
+                                <img src="./img/icon_login.png" alt="콘">
+                            </span>
+                            <span>
+                                <a href="login.html">로그인</a>
+                            </span>
+                            <span>
+                                <a href="agree.html">회원가입</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!-- gnb -->
+            <div class="hd_bt_wrap">
+                <nav id="hd_gnb">
+                    <ul>
+                        <li>
+                            <a href="intro.html">병원소개</a>
+                            <ul class="hd_subpage">
+                                <li><a href="intro_sub01.html">병원 이야기</a></li>
+                                <li><a href="intro_sub02.html">의료진 소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="info.html">진료안내</a>
+                            <ul class="hd_subpage">
+                                <li><a href="info_sub01.html">진료안내</a></li>
+                                <li><a href="info_sub02.html">입퇴원안내</a></li>
+                                <li><a href="info_sub03.html">서류발급안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="medi1.html">치료</a>
+                            <ul class="hd_subpage">
+                                <li><a href="medi1_sub01.html">서브1</a></li>
+                                <li><a href="medi1_sub02.html">서브2</a></li>
+                                <li><a href="medi1_sub03.html">서브3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="medi2.html">주사</a>
+                            <ul class="hd_subpage">
+                                <li><a href="medi2_sub01.html">서브1</a></li>
+                                <li><a href="medi2_sub02.html">서브2</a></li>
+                                <li><a href="medi2_sub03.html">서브3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="commu.html">커뮤니티</a>
+                            <ul class="hd_subpage">
+                                <li><a href="commu_sub01.html">공지사항</a></li>
+                                <li><a href="state.html">증명서발급안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 사이드바 -->
+            <div class="sidebar">
+                <a href=""><img src="./img/btn-calling.png" alt=""></a>
+                <a href=""><img src="./img/btn-chat-kakao.png" alt=""></a>
+                <button type="button" onclick="$('html, body').animate({scrollTop: 0}, 300);"><img src="./img/btn_top.png" alt="">TOP</button>
+            </div>
+        </header>
+
+        
+        <div class="con_content"> 
+            <div class="con_slide">
+                <ul class="con_slide_box">
+                    <li>
+                        <a href="">
+                            <div class="con_test">
+                                <img src="./img/slide1.jpg" alt="slide_1">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="con_test">
+                                <img src="./img/slide2.jpg" alt="slide_2">
+                            </div>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="con_test">
+                                <img src="./img/slide3.jpg" alt="slide_3">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="con_test">
+                                <img src="./img/slide4.jpg" alt="slide_4">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="con_test">
+                                <img src="./img/slide5.jpg" alt="slide_4">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <script>
+                    $(document).ready(function(){
+                        wd = $(window).width();
+                        var intv = setInterval(function(){
+                            ani1();
+                        }, 3000);
+                        function ani1(){
+                            $(".con_slide_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
+                            $(".con_slide_box li").eq(0).appendTo($(".con_slide_box"));
+                            $(".con_slide_box").css("margin-left","0px");
+                            });
+                        }
+                        function ani2(){
+                            $(".con_slide_box").css("margin-left",-wd+"px");
+                            $(".con_slide_box li:last-child").prependTo($(".con_slide_box"));
+                            $(".con_slide_box").not(":animated").animate({"margin-left":"0px"}, 600);
+                        }
+                        $(".btn_group .next_btn").click(function(){
+                            clearInterval(intv);
+                            ani1();
+                            intv = setInterval(function(){ ani1(); }, 3000);
+                        });
+                        $(".btn_group .prev_btn").click(function(){
+                            clearInterval(intv);
+                            ani2();
+                            intv = setInterval(function(){ ani1(); }, 3000);
+                        });
+                    });    
+                </script>
+            </div>
+            <div class="con_info">
+                <section class="con_infosec">
+                    <div class="con_info_first">
+                        <ul class="con_visit">
+                            <li>
+                                <p>
+                                    <strong>처음 오셨나요?</strong><br>
+                                    증상에 따른 알맞은 치료로<br>
+                                    빠른 회복을 돕겠습니다.
+                                </p>
+                            </li>
+                            <nav class="con_link">
+                                <span>
+                                    <a href="">의료진 소개</a>
+                                </span>
+                                <span>
+                                    <a href="">병원 둘러보기</a>
+                                </span>
+                                <span>
+                                    <a href="">온라인 예약</a>
+                                </span>
+                                <span>
+                                    <a href="">온라인 상담</a>
+                                </span>
+                            </nav>
+                        </ul>
+                    </div>
+                    <div class="con_info_sales">
+                        <div class="con_sales">
+                            <p>
+                                <img src="./img/phone.png">031-913-9000
+                            </p>
+                            <ul class="con_time">
+                                <li>
+                                    <span class="con_t">
+                                        <span class="con_day">평    일</span>
+                                        09:30 ~ 21:00
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="con_t">
+                                        <span class="con_sat">토 요 일</span>
+                                        08:30 ~ 14:00
+                                    </span>    
+                                </li>
+                                <li>
+                                    <span class="con_t">
+                                        <span class="con_lunch">점심시간</span>
+                                        13:00 ~ 14:00
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="con_t">일요일, 공휴일 휴진</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="con_commu">
+                <section class="con_notice">
+                    <div class="con_nobox">
+                        <h3 class="con_title">병원소식</h3>
+                        <ul class="con_list">
+                            <li>
+                                <a href="">
+                                    구강보건의 날 행사! 가루치약 만들기
+                                </a>
+                                <span class="con_date">2022.06</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    구강보건의 날! 6세에 처음 만나는 영9치
+                                </a>
+                                <span class="con_date">2022.06</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    신간도서 [입속세균에 대한 17가지 질문]
+                                </a>
+                                <span class="con_date">2022.05</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    사과나무 '전체회의' 재개
+                                </a>
+                                <span class="con_date">2022.05</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="con_case">
+                    <div class="con_cabox">
+                        <h3 class="con_title" >환자이야기</h3>
+                        <ul class="con_list">
+                            <li>
+                                <a href="">조재영님의 진료후기입니다.</a>
+                            </li>
+                            <li>
+                                <a href="">정우희님의 진료후기입니다.</a>
+                            </li>
+                            <li>
+                                <a href="">길정훈님의 진료후기입니다.</a>
+                            </li>
+                            <li>
+                                <a href="">장성필님의 진료후기입니다.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="con_menu">
+                    <div class="con_menubox">
+                        <h3 class="con_title">자주 찾는 메뉴</h3>
+                        <ul class="con_menulink">
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon1.png">
+                                    오시는 길
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon2.png">
+                                    둘러보기
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon3.png">
+                                    서류 발급
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="ft_sns">
+                <div class="ft_inner">
+                    <h4>연세마디마취통증의학과의원</h4>
+                    <p class="ft_sns_link">
+                        <a href="" class="ft_sns_link1"></a>
+                        <a href="" class="ft_sns_link2"></a>
+                        <a href="" class="ft_sns_link3"></a>
+                        <a href="" class="ft_sns_link4"></a>
+                    </p>
+                </div>
+            </div>
+            <nav class="ft_link">
+                <div class="ft_inner">
+                    <span><a href="">병원소개</a></span>
+                    <span><a href="">진료내용</a></span>
+                    <span><a href="">치료</a></span>
+                    <span><a href="">주사</a></span>
+                    <span><a href="">병원공지   </a></span>
+                </div>
+            </nav>
+            <div class="ft_info">
+                <div class="ft_inner">
+                    <small class="ft_copy">© 2021 ysmadi</small>
+                    <br>
+                    <br>
+                    <span>의료기관명칭 | 연세마디마취통증의학과의원</span>
+                    <span>대표원장 | 이정석</span>
+                    <span>사업자등록번호 | 242-99-01271</span>
+                    <br>
+                    <span>대표전화 | 031. 994. 4225</span>
+                    <br>
+                    <span>주소 | 경기도 고양시 일산동구 정발산로 23, 301호(장항동,호수빌딩) 연세마디마취통증의학과의원</span>
+                    <br>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

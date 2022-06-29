@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- 푸터 -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- 문서 로딩전 스크립트 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <style>
+    .cotent {clear: both; width: 100%; min-height: 100%;}
+    .sub_tit { background-image: url(img/bg_sub_top1.jpg); height: 142px;}
+    .sub_tit h2 { font-size: 40px; padding: 40px 0 0; margin: 0 auto; max-width: 1120px; color: #fff;}
+    
+    .commu_list_wrap {width: 100%; background-color: #1f75b0;}
+    .commu_list {width: 1120px; margin: auto; text-align: center;}
+    .commu_list li {display: inline-block; font-size: 18px; padding-top: 20px; margin: 0 5px; }
+    .commu_list li a {display: block; color: #fff; position: relative; padding-bottom: 20px;}
+    .commu_list li:nth-child(1) a:after {content: ""; position: absolute; right: 0;bottom: 0;left: 0;height: 4px;background: #91e9ff;}
+    .commu_wrap {width: 1120px; margin: auto; padding-bottom: 50px;}
+    
+    .commu_pagehead {clear: both; height: 60px; margin-bottom: 10px;}
+    .commu_pagehead {padding: 40px 0 15px; border-bottom: 1px solid #555;}
+    .commu_pagehead h3 {display: block; font-size: 40px; float: left;}
+    .commu_pagehead p {float: right;}
+    .commu_pagehead_nav a {border-right: 1px solid #555; margin: 15px; padding-right: 20px;} 
+    .commu_pagehead_nav span { padding-right: 10px; }
+    .commu_pagehead_nav span:after {padding-left: 20px; content: ">";}
+    
+    .commu_pagebody {clear: both; padding-top: 20px;}
+    .commu_pagebody table * {font-size: 18px;}
+    .commu_pagebody table tr {border-bottom: 1px solid #000;}
+    .commu_pagebody table tr:first-child { border-top: 1px solid #000;}
+    .commu_pagebody table th {width: 180px;}
+    .commu_pagebody table td {width: 940px; padding: 10px 0;}
+    .commu_pagebody table input {width: 300px; height: 40px;}
+
+    .commu_form_bt {margin-top: 40px;}
+    .commu_button_wrap {width: 200px; height: 50px; margin: auto;}
+    .commu_button_wrap button {width: 100%; height: 100%; background: #1f75b0; border: 0; color: #fff;}
+    .commu_button_wrap span {font-size: 18px;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <header class="header">
+            <!-- 로고&로그인 -->
+            <div class="hd_top_wrap">
+                <div class="hd_top_area">
+                    <a href="index.html" class="hd_logo">
+                        <img src="./img/img_logo.png" alt="로고">
+                    </a>
+                    <div class="hd_top_r">
+                        <div class="hd_lang">
+                            <a href="">ENG</a>
+                        </div>
+                        <div class="hd_login">
+                            <span>
+                                <img src="./img/icon_login.png" alt="콘">
+                            </span>
+                            <span>
+                                <a onfocus=blur() href="javascript:void(window.open('login.html','win0','width=560,height=600,status=no,toolbar=no,scrollbars=no'))">로그인</a>
+                            </span>
+                            <span>
+                                <a href="agree.html">회원가입</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!-- gnb -->
+            <div class="hd_bt_wrap">
+                <nav id="hd_gnb">
+                    <ul>
+                        <li>
+                            <a href="intro.html">병원소개</a>
+                            <ul class="hd_subpage">
+                                <li><a href="intro_sub01.html">병원 이야기</a></li>
+                                <li><a href="intro_sub02.html">의료진 소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="info.html">진료안내</a>
+                            <ul class="hd_subpage">
+                                <li><a href="info_sub01.html">진료안내</a></li>
+                                <li><a href="info_sub02.html">입퇴원안내</a></li>
+                                <li><a href="info_sub03.html">서류발급안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="medi1.html">치료1</a>
+                            <ul class="hd_subpage">
+                                <li><a href="medi1_sub01.html">서브1</a></li>
+                                <li><a href="medi1_sub02.html">서브2</a></li>
+                                <li><a href="medi1_sub03.html">서브3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="medi2.html">치료2</a>
+                            <ul class="hd_subpage">
+                                <li><a href="medi2_sub01.html">서브1</a></li>
+                                <li><a href="medi2_sub02.html">서브2</a></li>
+                                <li><a href="medi2_sub03.html">서브3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="commu.html">커뮤니티</a>
+                            <ul class="hd_subpage">
+                                <li><a href="commun_sub01.html">공지사항</a></li>
+                                <li><a href="commun_sub02.html">문의사항</a></li>
+                                <li><a href="commun_sub03.html">치료후기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 사이드바 -->
+            <div class="sidebar">
+                <a href=""><img src="./img/btn-calling.png" alt=""></a>
+                <a href=""><img src="./img/btn-chat-kakao.png" alt=""></a>
+                <button type="button" onclick="$('html, body').animate({scrollTop: 0}, 300);"><img src="./img/btn_top.png" alt="">TOP</button>
+            </div>
+        </header>
+        <div class="commu">
+            <div class="sub_tit">
+                <h2>회원정보입력</h2>
+            </div>
+            <div class="commu_list_wrap">
+                <ul class="commu_list">
+                    <li><a href="">정보변경</a></li>
+                    <li><a href="">비밀번호 변경</a></li>
+                    <li><a href="">회원탈퇴</a></li>
+                </ul>
+            </div>
+            <div class="commu_wrap">
+                <div class="commu_pagehead">
+                    <div>
+                        <h3>정보변경</h3>
+                        <p class="commu_pagehead_nav">
+                            <a href="index.html">HOME</a>
+                            <span>마이페이지</span>
+                            <strong>정보변경</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="commu_pagebody">
+                    <fieldset>
+                        <form action="">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>이름</th>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>이메일</th>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>휴대폰</th>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="commu_form_bt">
+                                <div class="commu_button_wrap">
+                                    <button type="submit">
+                                        <span>수정완료</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="ft_sns">
+                <div class="ft_inner">
+                    <h4>서울큰나무병원 SNS</h4>
+                    <p class="ft_sns_link">
+                        <a href="" class="ft_sns_link1"></a>
+                        <a href="" class="ft_sns_link2"></a>
+                        <a href="" class="ft_sns_link3"></a>
+                        <a href="" class="ft_sns_link4"></a>
+                    </p>
+                </div>
+            </div>
+            <nav class="ft_link">
+                <div class="ft_inner">
+                    <span><a href="">이용약관</a></span>
+                    <span><a href="">개인정보처리방침</a></span>
+                    <span><a href="">환자의 권리와 의무</a></span>
+                    <span><a href="">비급여안내</a></span>
+                </div>
+            </nav>
+            <div class="ft_info">
+                <div class="ft_inner">
+                    <h4>서울큰나무병원</h4>
+                    <span>주소 : 서울시 강서구 강서로 206</span>
+                    <br>
+                    <span>대표 : 성남석</span>
+                    <span>사업자등록번호 : 306-96-91606</span>
+                    <span>대표번호 : 02-2695-1155</span>
+                    <br>
+                    <small class="ft_copy">Copyright © 2019 서울큰나무병원</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* 회원가입 */
+.join{ font-size: 18px; font-weight: 300px;}
+.sub_tit{ background-image: url(img/bg_sub_top1.jpg); height: 142px;}
+.sub_tit h2{ font-size: 40px; padding: 40px 0 0; margin: 0 auto; max-width: 1120px; color: #fff;}
+.section{ max-width: 1120px; margin: 0 auto; padding-top: 80px;}
+.section table{ border-collapse: collapse; width: 100%;}
+.section tr{ border-top: 1px solid #000; height: 60px; }
+.section tr:last-child{ height: 120px; border-bottom: 1px solid;}
+.section th{ width: 160px; text-align: start; padding-left: 20px; vertical-align: middle;}
+.section td{vertical-align: middle;}
+.text{ height: 34px; width: 300px; font-size: 18px; font-weight: 300px;} 
+ select{height: 40px;}
+.jo_submit{ text-align: center; padding-top: 80px;}
+.jo_submit input{ width: 200px; height: 50px; background-color: #0054FF; color: #fff;}
+#selectEmail{font-size: 18px; font-weight: 300px;}
+#select_num{ font-size: 18px; font-weight: 300px;}
+
+/* 회원약관 */
+.agree{ margin: 0 auto; font-weight: 300px; font-size: 18px; }
+
+.sub_tit{ background-image: url(../img/bg_sub_top1.jpg); height: 142px;}
+.agreeForm{ padding-top: 80px; margin: 0 auto; width: 1120px;}
+.scrollBar{ overflow: auto; height: 200px; border: 1px solid #d5d5d5; background-color: #EAEAEA;}
+.ckbox{ padding: 20px 0;}
+.agree_btn{ text-align: center;}
+.agree_btn a input{ width: 200px; height: 50px; background-color: #0054FF; color: #fff;} 
