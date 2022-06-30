@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/header.css">
     <style>
         *{margin: 0; padding: 0;}
 
         h2{ padding: 45px 0px 25px; text-align: center; font-weight: 600px; font-size: 30px; border-bottom: 1px solid #D5D5D5;}
-        fieldset{padding: 25px 70px 60px;}
+        fieldset{display: block; margin: 0 auto; width: 400px;}
         legend{ visibility: hidden;}
         form{ display: block;}
         form label{display: block; font-size: 18px; font-weight: 300; margin: 15px 0 5px;}
@@ -21,6 +22,89 @@
 </head>
 <body>
 <div>
+    <header class="header">
+        <!-- 로고&로그인 -->
+        <div class="hd_top_wrap">
+            <div class="hd_top_area">
+                <a href="index.html" class="hd_logo">
+                    <img src="./img/logo.png" alt="로고">
+                </a>
+                <div class="hd_top_r">
+                    <div class="hd_lang">
+                        <a href="">ENG</a>
+                    </div>
+                    <div class="hd_login">
+                        <span>
+                            <img src="./img/icon_login.png" alt="콘">
+                        </span>
+                        <span>
+                            <a href="login.html">로그인</a>
+                        </span>
+                        <span>
+                            <a href="agree.html">회원가입</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- gnb -->
+        <div class="hd_bt_wrap">
+            <nav id="hd_gnb">
+                <ul>
+                    <li>
+                        <a href="intro.html">병원소개</a>
+                        <ul class="hd_subpage">
+                            <li><a href="hospital.html">병원 이야기</a></li>
+                            <li><a href="doctor.html">의료진 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="info.html">진료안내</a>
+                        <ul class="hd_subpage">
+                            <li><a href="waist.html">허리</a></li>
+                            <li><a href="neck.html">목</a></li>
+                            <li><a href="shoulder.html">어깨</a></li>
+                            <li><a href="knee.html">무릎</a></li>
+                            <li><a href="24.html">팔꿈치</a></li>
+                            <li><a href="hand.html">손/발</a></li>
+                            <li><a href="head.html">두통</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="medi1.html">치료</a>
+                        <ul class="hd_subpage">
+                            <li><a href="prolo.html">프롤로치료</a></li>
+                            <li><a href="28.html">체외충격파치료</a></li>
+                            <li><a href="34.html">도수치료</a></li>
+                            <li><a href="35.html">물리치료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="medi2.html">주사</a>
+                        <ul class="hd_subpage">
+                            <li><a href="medi2_sub01.html">마이어스칵테일</a></li>
+                            <li><a href="medi2_sub02.html">마늘주사</a></li>
+                            <li><a href="medi2_sub03.html">멀티블루5주</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="commu.html">커뮤니티</a>
+                        <ul class="hd_subpage">
+                            <li><a href="commu_sub01.html">공지사항</a></li>
+                            <li><a href="subpage.html">증명서발급안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 사이드바 -->
+        <div class="sidebar">
+            <a href=""><img src="./img/btn-calling.png" alt=""></a>
+            <a href=""><img src="./img/btn-chat-kakao.png" alt=""></a>
+            <button type="button" onclick="$('html, body').animate({scrollTop: 0}, 300);"><img src="./img/btn_top.png" alt="">TOP</button>
+        </div>
+    </header>
     <h2>아이디/비밀번호 찾기</h2>
     <div>
         <fieldset>
